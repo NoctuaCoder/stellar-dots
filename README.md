@@ -22,6 +22,7 @@
 
 - ⚡ **Instalação One-Command** - Um único comando para setup completo
 - 🎨 **3 Temas Lindos** - Rosé Pine, Catppuccin Mocha, Nord
+- 📊 **Escolha de Barra** - Waybar (simples) ou illogical-impulse (avançado com IA)
 - 🔒 **Backup Automático** - Seus configs antigos ficam seguros
 - 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
 - 🎯 **TUI Interativa** - Interface linda no terminal
@@ -93,6 +94,7 @@ cd stellar-dots
 
 3. **Siga as instruções na tela:**
    - Escolha se quer instalar dependências
+   - Selecione a barra (Waybar ou illogical-impulse)
    - Selecione seu tema favorito
    - Aguarde a instalação
 
@@ -167,6 +169,7 @@ Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhe
 ## 💖 Créditos
 
 - Inspirado por [hyprstellar](https://github.com/xeji01/hyprstellar)
+- [illogical-impulse](https://github.com/end-4/dots-hyprland) por end-4 (opção de barra avançada)
 - [Rosé Pine](https://rosepinetheme.com/) theme
 - [Catppuccin](https://github.com/catppuccin/catppuccin) theme
 - [Nord](https://www.nordtheme.com/) theme
