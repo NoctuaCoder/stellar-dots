@@ -1,0 +1,70 @@
+/*******************************************************************************
+ * ROFI BLUETOOTH MANAGER
+ * Stellar Dots - Bluetooth Manager Theme
+ ******************************************************************************/
+
+* {
+    bg: #191724;
+    bg-alt: #1f1d2e;
+    fg: #e0def4;
+    fg-alt: #908caa;
+    
+    border: #3e8fb0;
+    selected: #9ccfd8;
+    
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border: 2px;
+    border-color: @border;
+    border-radius: 12px;
+    width: 450px;
+    padding: 20px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 15px;
+}
+
+inputbar {
+    children: [ prompt ];
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+}
+
+prompt {
+    text-color: @border;
+    padding: 5px;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    spacing: 5px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @bg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}

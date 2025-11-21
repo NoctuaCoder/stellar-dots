@@ -20,18 +20,41 @@
 
 ## 🌟 Features
 
+### Core
 - ⚡ **Instalação One-Command** - Um único comando para setup completo
-- 🎨 **3 Temas Lindos** - Rosé Pine, Catppuccin Mocha, Nord
+- 🎨 **7 Temas Lindos** - Rosé Pine, Catppuccin, Nord, Tokyo Night, Dracula, Gruvbox, Everforest
 - 📊 **Escolha de Barra** - Waybar (simples) ou illogical-impulse (avançado com IA)
-- 🎮 **Suporte a Gaming** - Detecção automática de GPU e instalação de drivers/ferramentas
 - 🔒 **Backup Automático** - Seus configs antigos ficam seguros
 - 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
 - 🎯 **TUI Interativa** - Interface linda no terminal
+- 📝 **Documentação PT-BR** - Tudo em português!
+
+### Utilities
+- 🔌 **Power Menu** - Desligar, reiniciar, bloquear, suspender
+- 📋 **Clipboard Manager** - Histórico de clipboard com busca
+- 📡 **Network Manager** - Gerenciar WiFi facilmente
+- 🔵 **Bluetooth Manager** - Parear e conectar dispositivos
+- 🔊 **Audio Switcher** - Trocar dispositivos de áudio
+- 😊 **Emoji Picker** - Seletor de emojis com busca
+
+### Gaming
+- 🎮 **Suporte a Gaming** - Detecção automática de GPU e instalação de drivers/ferramentas
+- ⚡ **Performance Profiles** - Modos Performance, Balanced, Power Save
+- 🎯 **Game Launcher** - Launcher unificado para Steam, Lutris, Heroic
+
+### Productivity
+- 🍅 **Pomodoro Timer** - Timer de produtividade com notificações
+- 🗂️ **Workspace Manager** - Gerenciar workspaces facilmente
+
+### System
+- 📦 **Update Manager** - Atualizar sistema, Flatpak, dotfiles
+- 💾 **Backup Manager** - Criar, restaurar e gerenciar backups
+
+### Visual
 - 🔄 **Theme Switcher** - Troque temas em tempo real
 - 📸 **Scripts Utilitários** - Screenshot, wallpaper, gravação de tela
 - 🌊 **Animações Suaves** - Transições e efeitos modernos
 - 💎 **Glassmorphism** - Blur e transparência em tudo
-- 📝 **Documentação PT-BR** - Tudo em português!
 
 ## 🎨 Temas
 

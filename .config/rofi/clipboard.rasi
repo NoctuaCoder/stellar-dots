@@ -1,0 +1,77 @@
+/*******************************************************************************
+ * ROFI CLIPBOARD MANAGER
+ * Stellar Dots - Clipboard History Theme
+ ******************************************************************************/
+
+* {
+    bg: #191724;
+    bg-alt: #1f1d2e;
+    fg: #e0def4;
+    fg-alt: #908caa;
+    
+    border: #c4a7e7;
+    selected: #9ccfd8;
+    
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border: 2px;
+    border-color: @border;
+    border-radius: 12px;
+    width: 600px;
+    padding: 20px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 15px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+}
+
+prompt {
+    text-color: @border;
+    padding: 5px;
+}
+
+entry {
+    placeholder: "Buscar...";
+    placeholder-color: @fg-alt;
+    text-color: @fg;
+}
+
+listview {
+    columns: 1;
+    lines: 10;
+    spacing: 5px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @bg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}

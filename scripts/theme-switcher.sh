@@ -27,6 +27,22 @@ show_theme_preview() {
     echo -e "3) Nord"
     echo -e "   ████ Ártico e gelado"
     echo -e "   Cores: Azul, Cinza\n"
+    
+    echo -e "4) Tokyo Night"
+    echo -e "   ████ Cyberpunk vibrante"
+    echo -e "   Cores: Azul Neon, Roxo\n"
+    
+    echo -e "5) Dracula"
+    echo -e "   ████ Escuro e misterioso"
+    echo -e "   Cores: Roxo, Rosa, Cyan\n"
+    
+    echo -e "6) Gruvbox"
+    echo -e "   ████ Retro e aconchegante"
+    echo -e "   Cores: Laranja, Verde, Azul\n"
+    
+    echo -e "7) Everforest"
+    echo -e "   ████ Floresta tranquila"
+    echo -e "   Cores: Verde, Teal, Bege\n"
 }
 
 # Apply theme
@@ -46,6 +62,22 @@ apply_theme() {
         3)
             theme_dir="nord"
             theme_name="Nord"
+            ;;
+        4)
+            theme_dir="tokyo-night"
+            theme_name="Tokyo Night"
+            ;;
+        5)
+            theme_dir="dracula"
+            theme_name="Dracula"
+            ;;
+        6)
+            theme_dir="gruvbox"
+            theme_name="Gruvbox"
+            ;;
+        7)
+            theme_dir="everforest"
+            theme_name="Everforest"
             ;;
         *)
             echo "Opção inválida!"
@@ -72,5 +104,5 @@ apply_theme() {
 # Main
 show_theme_preview
 
-read -p "Escolha [1-3]: " choice
+read -p "Escolha [1-7]: " choice
 apply_theme "$choice"

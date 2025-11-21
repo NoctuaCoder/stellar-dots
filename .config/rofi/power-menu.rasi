@@ -1,0 +1,76 @@
+/*******************************************************************************
+ * ROFI POWER MENU
+ * Stellar Dots - Beautiful Power Menu Theme
+ ******************************************************************************/
+
+* {
+    bg: #191724;
+    bg-alt: #1f1d2e;
+    fg: #e0def4;
+    fg-alt: #908caa;
+    
+    border: #eb6f92;
+    selected: #31748f;
+    urgent: #eb6f92;
+    
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border: 2px;
+    border-color: @border;
+    border-radius: 12px;
+    width: 400px;
+    padding: 20px;
+}
+
+mainbox {
+    children: [ message, listview ];
+    spacing: 15px;
+}
+
+message {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+}
+
+textbox {
+    text-color: @fg;
+    padding: 5px;
+}
+
+listview {
+    columns: 1;
+    lines: 6;
+    spacing: 8px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @fg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    background-color: transparent;
+}
