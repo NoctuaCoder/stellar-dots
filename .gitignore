@@ -1,0 +1,12 @@
+# Stellar Dots - Dotfiles
+
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+.cache/
+.local/
+*.bak
+*.tmp
+.config-backup-*/
