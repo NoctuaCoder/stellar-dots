@@ -1,0 +1,100 @@
+/*******************************************************************************
+ *                   GLASSMORPHISM ULTIMATE - SIDEBAR WITH ICONS
+ *                        Inspired by Modern YouTube UI
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    transparency: "real";
+    location: west;
+    anchor: west;
+    width: 80px;
+    height: 100%;
+    x-offset: 12px;
+    y-offset: 0;
+    background-color: rgba(31, 29, 46, 0.3);
+    border: 2px solid rgba(196, 167, 231, 0.3);
+    border-radius: 24px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 20px 0;
+    background-color: transparent;
+    children: [ "listview", "userbox" ];
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 7;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 12px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 0;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: transparent;
+    text-color: rgba(224, 222, 244, 0.7);
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: rgba(224, 222, 244, 0.7);
+}
+
+element selected.normal {
+    background-color: rgba(196, 167, 231, 0.2);
+    text-color: #e0def4;
+    border: 2px solid rgba(196, 167, 231, 0.4);
+}
+
+element-icon {
+    background-color: transparent;
+    size: 32px;
+    cursor: pointer;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+/* User box at bottom */
+userbox {
+    enabled: true;
+    spacing: 0;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 16px;
+    background-color: rgba(196, 167, 231, 0.15);
+    border: 1px solid rgba(196, 167, 231, 0.3);
+}
+
+/* Scrollbar (hidden but styled) */
+scrollbar {
+    width: 0;
+    border: 0;
+    handle-width: 0;
+    padding: 0;
+}

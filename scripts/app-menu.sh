@@ -1,58 +1,56 @@
 #!/usr/bin/env bash
 
 # ═══════════════════════════════════════════════════════════════════════════
-#                      ✨ GLASSMORPHISM APP MENU ✨
-#                           Stellar Dots Rice
+#                    GLASSMORPHISM APP MENU LAUNCHER
+#                         Multiple Style Options
 # ═══════════════════════════════════════════════════════════════════════════
 
+# Configuration
 ROFI_CONFIG_DIR="$HOME/.config/rofi"
 
-# Default to full menu
-STYLE="${1:-full}"
+# Default to sidebar menu
+STYLE="${1:-sidebar}"
 
-# Help message
+# Show help
 show_help() {
-    cat << EOF
-✨ Glassmorphism App Menu
-
-Usage: $(basename "$0") [STYLE]
-
-Styles:
-  full      Full menu with search and categories (default)
-  sidebar   Compact vertical sidebar launcher
-
-Examples:
-  $(basename "$0")           # Launch full menu
-  $(basename "$0") sidebar   # Launch sidebar menu
-  $(basename "$0") --help    # Show this help
-
-EOF
+    echo "Glassmorphism App Menu Launcher"
+    echo ""
+    echo "Usage: $(basename "$0") [STYLE]"
+    echo ""
+    echo "Available styles:"
+    echo "  sidebar   - Compact vertical sidebar (default)"
+    echo "  full      - Full menu with search bar"
+    echo "  ultimate  - Icon-only sidebar (YouTube style)"
+    echo "  youtube   - Full YouTube-style menu with controls"
+    echo ""
+    echo "Examples:"
+    echo "  $(basename "$0") sidebar"
+    echo "  $(basename "$0") youtube"
+    echo "  $(basename "$0") --help"
 }
 
-# Parse arguments
+# Parse arguments and launch
 case "$STYLE" in
     -h|--help)
         show_help
         exit 0
         ;;
     sidebar)
-        THEME="$ROFI_CONFIG_DIR/glassmorphism-sidebar.rasi"
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-sidebar.rasi"
         ;;
     full)
-        THEME="$ROFI_CONFIG_DIR/glassmorphism-full.rasi"
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-full.rasi"
+        ;;
+    ultimate)
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-ultimate.rasi"
+        ;;
+    youtube)
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-youtube.rasi"
         ;;
     *)
-        echo "❌ Unknown style: $STYLE"
-        echo "Use --help for usage information"
+        echo "Error: Unknown style '$STYLE'"
+        echo ""
+        show_help
         exit 1
         ;;
 esac
-
-# Check if theme exists
-if [ ! -f "$THEME" ]; then
-    echo "❌ Theme not found: $THEME"
-    exit 1
-fi
-
-# Launch Rofi with the selected theme
-rofi -show drun -theme "$THEME"
