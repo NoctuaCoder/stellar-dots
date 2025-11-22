@@ -98,6 +98,30 @@ Modern pastel palette with coffee, chocolate and vibrant colors.
 ### Nord
 Minimalist arctic theme with icy blues and elegant grays.
 
+### Stellar (Official Theme)
+Exclusive theme with cozy palette and premium design, matching the Stellar Dots aesthetic.
+
+## 🎨 Theme Gallery
+
+````carousel
+![Rosé Pine](.github/screenshots/desktop/rose-pine.png)
+*Rosé Pine - Cozy and elegant with soft pink and purple tones*
+<!-- slide -->
+![Catppuccin](.github/screenshots/themes/catppuccin.png)
+*Catppuccin Mocha - Modern pastel palette with coffee and chocolate vibes*
+<!-- slide -->
+![Nord](.github/screenshots/themes/nord.png)
+*Nord - Minimalist arctic theme with icy blues*
+<!-- slide -->
+![Stellar](.github/screenshots/themes/stellar.png)
+*Stellar - Premium theme with cosmic gradients*
+<!-- slide -->
+![Tokyo Night](.github/screenshots/themes/tokyo-night.png)
+*Tokyo Night - Cyberpunk aesthetic with vibrant neon colors*
+````
+
+> 💡 **More themes available:** Dracula, Gruvbox, and Everforest (screenshots coming soon!)
+
 ## 📊 Bar Options
 
 ### Waybar (Recommended)
