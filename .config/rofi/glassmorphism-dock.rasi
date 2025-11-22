@@ -1,0 +1,86 @@
+/*******************************************************************************
+ *                GLASSMORPHISM DOCK - HORIZONTAL BOTTOM BAR
+ *                    Inspired by macOS Dock / Spotify Player
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    transparency: "real";
+    location: south;
+    anchor: south;
+    width: 60%;
+    height: 80px;
+    x-offset: 0;
+    y-offset: -12px;
+    background-color: rgba(31, 29, 46, 0.35);
+    border: 2px solid rgba(196, 167, 231, 0.35);
+    border-radius: 20px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "listview" ];
+}
+
+listview {
+    enabled: true;
+    columns: 10;
+    lines: 1;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: horizontal;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 8px;
+    padding: 12px 20px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 0;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: transparent;
+    text-color: rgba(224, 222, 244, 0.7);
+    cursor: pointer;
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: rgba(224, 222, 244, 0.7);
+}
+
+element selected.normal {
+    background-color: rgba(196, 167, 231, 0.25);
+    text-color: #e0def4;
+    border: 2px solid rgba(196, 167, 231, 0.5);
+    transform: scale(1.1);
+}
+
+element-icon {
+    background-color: transparent;
+    size: 32px;
+    cursor: pointer;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    font: "JetBrainsMono Nerd Font 9";
+}

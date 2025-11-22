@@ -1,0 +1,126 @@
+/*******************************************************************************
+ *                GLASSMORPHISM SPOTIFY - MUSIC PLAYER STYLE
+ *                    Sidebar + Main content + Bottom player
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(25, 23, 36, 0.85);
+    border: 2px solid rgba(156, 207, 216, 0.3);
+    border-radius: 24px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "sidebar-content", "player" ];
+}
+
+sidebar-content {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    orientation: horizontal;
+    children: [ "sidebar", "listview" ];
+}
+
+/* Sidebar */
+sidebar {
+    enabled: true;
+    width: 200px;
+    spacing: 8px;
+    padding: 20px 16px;
+    background-color: rgba(31, 29, 46, 0.5);
+    border-right: 1px solid rgba(196, 167, 231, 0.2);
+}
+
+/* Main content */
+listview {
+    enabled: true;
+    columns: 3;
+    lines: 3;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 16px;
+    padding: 24px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 12px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgba(31, 29, 46, 0.6);
+    text-color: rgba(224, 222, 244, 0.8);
+    cursor: pointer;
+    border: 2px solid rgba(196, 167, 231, 0.15);
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: rgba(31, 29, 46, 0.6);
+    text-color: rgba(224, 222, 244, 0.8);
+}
+
+element selected.normal {
+    background-color: rgba(156, 207, 216, 0.25);
+    text-color: #e0def4;
+    border: 2px solid rgba(156, 207, 216, 0.5);
+}
+
+element-icon {
+    background-color: transparent;
+    size: 64px;
+    cursor: pointer;
+    horizontal-align: 0.5;
+    border-radius: 12px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+/* Bottom player bar */
+player {
+    enabled: true;
+    spacing: 16px;
+    padding: 16px 24px;
+    background-color: rgba(31, 29, 46, 0.7);
+    border-top: 1px solid rgba(196, 167, 231, 0.3);
+    border-radius: 0 0 22px 22px;
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width: 4px;
+    handle-color: rgba(156, 207, 216, 0.5);
+    background-color: rgba(31, 29, 46, 0.3);
+    border-radius: 8px;
+    padding: 0;
+    margin: 0 4px 0 0;
+}
