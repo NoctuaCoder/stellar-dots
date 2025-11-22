@@ -21,7 +21,7 @@
 
 **Languages:** [🇺🇸 English](#) • [🇧🇷 Português](README.pt-BR.md) • [🇪🇸 Español](#) • [🇫🇷 Français](#)
 
-[Installation](#-installation) • [Features](#-features) • [Themes](#-themes) • [Documentation](#-documentation) • [Screenshots](#-screenshots)
+[Installation](#-installation) • [Features](#-features) • [How to Use](#-how-to-use-after-install) • [Themes](#-themes) • [Documentation](#-documentation) • [Screenshots](#-screenshots) • [Contributing](#-contributing) • [Roadmap](#-roadmap)
 
 </div>
 
@@ -198,6 +198,121 @@ cd stellar-dots
 
 [View all shortcuts](docs/HOTKEYS.md)
 
+## 🎯 How to Use After Install
+
+### First Steps
+
+After logging into Hyprland:
+
+1. **Test the basics**
+   - Press `Super + Return` to open terminal
+   - Press `Super + Space` for glassmorphism menu
+   - Press `Super + W` to change wallpaper
+
+2. **Customize your setup**
+   ```bash
+   # Change theme
+   Super + T  # or run: theme-switcher.sh
+   
+   # Change wallpaper
+   Super + W  # or run: wallpaper-changer.sh
+   ```
+
+3. **Explore utilities**
+   - `Super + C` - Clipboard history
+   - `Super + N` - Network manager
+   - `Super + B` - Bluetooth manager
+   - `Super + Period` - Emoji picker
+
+### Daily Usage
+
+**Window Management**
+- `Super + Q` - Close window
+- `Super + V` - Toggle floating
+- `Super + F` - Fullscreen
+- `Super + 1-9` - Switch workspace
+
+**Screenshots**
+- `Print` - Full screenshot
+- `Super + Print` - Area selection
+- `Super + Shift + Print` - Window screenshot
+
+**Screen Recording**
+- `Super + R` - Start/stop recording
+
+### Customization
+
+**Change Theme**
+```bash
+theme-switcher.sh
+# Choose from: Rosé Pine, Catppuccin, Nord, Stellar
+```
+
+**Change Wallpaper**
+```bash
+wallpaper-changer.sh          # Interactive selector
+wallpaper-changer.sh --random # Random wallpaper
+```
+
+**Edit Configs**
+```bash
+# Hyprland
+nano ~/.config/hypr/hyprland.conf
+
+# Waybar
+nano ~/.config/waybar/config.jsonc
+nano ~/.config/waybar/style.css
+
+# Rofi
+nano ~/.config/rofi/glassmorphism-full.rasi
+```
+
+### Utilities
+
+**Power Menu**
+```bash
+power-menu.sh
+# Options: Shutdown, Restart, Lock, Suspend, Logout
+```
+
+**Performance Profiles** (if gaming setup installed)
+```bash
+performance-profile.sh
+# Modes: Performance, Balanced, Power Save
+```
+
+**Pomodoro Timer**
+```bash
+pomodoro.sh
+# 25min work + 5min break cycles
+```
+
+**Backup Manager**
+```bash
+backup-manager.sh
+# Create, restore, and manage config backups
+```
+
+### Troubleshooting
+
+If something doesn't work:
+
+1. **Check installation**
+   ```bash
+   ~/stellar-dots/scripts/verify-installation.sh
+   ```
+
+2. **Read troubleshooting guide**
+   ```bash
+   cat ~/stellar-dots/docs/TROUBLESHOOTING.md
+   ```
+
+3. **Check logs**
+   ```bash
+   cat /tmp/hypr/*/hyprland.log
+   ```
+
+
 ## 📖 Documentation
 
 - [Complete Installation Guide](docs/INSTALACAO.md)
@@ -245,11 +360,114 @@ cd stellar-dots
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-- Share your custom themes
+Contributions are welcome! We'd love your help making Stellar Dots even better.
+
+### How to Contribute
+
+1. **Report Bugs**
+   - Open an [issue](https://github.com/alanascanferla/stellar-dots/issues)
+   - Include: distro, GPU, error logs
+   - Steps to reproduce
+
+2. **Suggest Features**
+   - Open an [issue](https://github.com/alanascanferla/stellar-dots/issues)
+   - Describe the feature
+   - Explain why it would be useful
+
+3. **Submit Pull Requests**
+   ```bash
+   # Fork the repo
+   git clone https://github.com/YOUR-USERNAME/stellar-dots.git
+   cd stellar-dots
+   
+   # Create a branch
+   git checkout -b feature/amazing-feature
+   
+   # Make your changes
+   # ...
+   
+   # Commit
+   git commit -m "✨ Add amazing feature"
+   
+   # Push
+   git push origin feature/amazing-feature
+   
+   # Open a Pull Request
+   ```
+
+4. **Share Custom Themes**
+   - Create your theme in `themes/community/`
+   - Follow the template in `themes/community/README.md`
+   - Submit a PR!
+
+5. **Improve Documentation**
+   - Fix typos
+   - Add examples
+   - Translate to other languages
+   - Write tutorials
+
+### What We Need Help With
+
+- 🎨 **New Themes** - Create beautiful color schemes
+- 📝 **Documentation** - Improve guides and translations
+- 🐛 **Bug Fixes** - Fix issues and improve stability
+- ✨ **Features** - Implement new utilities and scripts
+- 🧪 **Testing** - Test on different distros and hardware
+- 📸 **Screenshots** - Capture beautiful setups
+- 🎬 **Videos** - Create tutorials and demos
+
+### Community Guidelines
+
+- Be respectful and inclusive
+- Help others in issues
+- Test your changes before submitting
+- Follow existing code style
+- Document your changes
+
+## 🗺️ Roadmap
+
+### ✅ Completed (v1.0)
+- [x] Glassmorphism menus (sidebar + full)
+- [x] Waybar with modern features
+- [x] 20+ utility scripts
+- [x] Gaming support with GPU detection
+- [x] 4 beautiful themes
+- [x] Multi-distro support (Arch, Fedora, Debian)
+- [x] Comprehensive documentation
+- [x] Troubleshooting guide
+- [x] Security documentation
+- [x] Internationalization (English + Portuguese)
+
+### 🚧 In Progress (v1.1)
+- [ ] Screenshots and GIFs
+- [ ] Video tour/demo
+- [ ] Dry-run mode for installer
+- [ ] Automated tests (CI/CD)
+
+### 📋 Planned (v1.2)
+- [ ] More themes (Tokyo Night, Dracula, Gruvbox, Everforest)
+- [ ] Community theme system
+- [ ] Modular installer (choose components)
+- [ ] Better multi-distro support
+- [ ] Spanish and French translations
+
+### 🔮 Future Ideas (v2.0+)
+- [ ] Web-based configuration tool
+- [ ] Cloud backup integration
+- [ ] Plugin system
+- [ ] AI theme generator
+- [ ] Mobile app for remote control
+- [ ] Performance analytics dashboard
+
+### 🎯 Goals
+
+- ⭐ **100+ GitHub Stars** - Help us reach this milestone!
+- 🍴 **50+ Forks** - Share and customize
+- 👥 **Active Community** - Contributors and users
+- 🌍 **Multi-language** - 5+ languages supported
+- 📦 **Package Managers** - AUR, Nix, Flatpak support
+
+**Want to help?** Pick an item from the roadmap and open an issue or PR!
 
 ## 📜 License
 
@@ -268,10 +486,19 @@ This project is under the MIT license. See [LICENSE](LICENSE) for more details.
 
 If you liked this project, leave a ⭐ on the repository!
 
+**Found a bug?** [Open an issue](https://github.com/alanascanferla/stellar-dots/issues)  
+**Have a question?** [Start a discussion](https://github.com/alanascanferla/stellar-dots/discussions)  
+**Want to contribute?** See [Contributing](#-contributing) section above!
+
 ---
 
 <div align="center">
 
 **Made with 💜 and lots of ☕**
+
+**Star this repo if you find it useful!** ⭐
+
+[![GitHub stars](https://img.shields.io/github/stars/alanascanferla/stellar-dots?style=social)](https://github.com/alanascanferla/stellar-dots/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/alanascanferla/stellar-dots?style=social)](https://github.com/alanascanferla/stellar-dots/network/members)
 
 </div>
