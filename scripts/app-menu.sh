@@ -2,7 +2,7 @@
 
 # ═══════════════════════════════════════════════════════════════════════════
 #                    GLASSMORPHISM APP MENU LAUNCHER
-#                         9 Different Styles Available!
+#                         10 Different Styles Available!
 # ═══════════════════════════════════════════════════════════════════════════
 
 # Configuration
@@ -14,7 +14,7 @@ STYLE="${1:-sidebar}"
 # Show help
 show_help() {
     cat << EOF
-✨ Glassmorphism App Menu Launcher - 9 Styles!
+✨ Glassmorphism App Menu Launcher - 10 Styles!
 
 Usage: $(basename "$0") [STYLE]
 
@@ -33,6 +33,7 @@ Usage: $(basename "$0") [STYLE]
   control   - iOS/Android control center
   cards     - Card-based widget grid
   dashboard - Smart home dashboard layout
+  widgets   - 3-column widget center (NEW!)
 
 🎵 Complex Layouts:
   spotify   - Music player with sidebar + grid
@@ -40,16 +41,14 @@ Usage: $(basename "$0") [STYLE]
 Examples:
   $(basename "$0") sidebar    # Vertical sidebar
   $(basename "$0") dock       # Horizontal dock
-  $(basename "$0") cards      # Widget cards
-  $(basename "$0") dashboard  # Full dashboard
+  $(basename "$0") widgets    # Full widget center
   $(basename "$0") --help     # Show this help
 
 Keyboard shortcuts (add to hyprland.conf):
   Super + Space     - Full menu
   Super + A         - Sidebar
   Super + D         - Dock
-  Super + Shift + C - Cards
-  Super + Shift + D - Dashboard
+  Super + W         - Widgets (NEW!)
 
 EOF
 }
@@ -86,6 +85,9 @@ case "$STYLE" in
         ;;
     cards)
         rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-cards.rasi"
+        ;;
+    widgets)
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-widgets.rasi"
         ;;
     *)
         echo "❌ Error: Unknown style '$STYLE'"

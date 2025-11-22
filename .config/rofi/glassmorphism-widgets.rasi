@@ -1,0 +1,161 @@
+/*******************************************************************************
+ *              GLASSMORPHISM WIDGET CENTER - FULL DASHBOARD
+ *                    3-Column layout with power, apps, and controls
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 1000px;
+    height: 600px;
+    background-image: linear-gradient(135deg, rgba(156, 207, 216, 0.2), rgba(235, 111, 146, 0.2));
+    border: 2px solid rgba(196, 167, 231, 0.4);
+    border-radius: 36px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "topbar", "content", "bottombar" ];
+}
+
+/* Top bar with profile icons */
+topbar {
+    enabled: true;
+    spacing: 12px;
+    padding: 16px 24px;
+    background-color: rgba(31, 29, 46, 0.3);
+    border-bottom: 1px solid rgba(196, 167, 231, 0.2);
+    border-radius: 34px 34px 0 0;
+}
+
+/* Main content - 3 columns */
+content {
+    enabled: true;
+    spacing: 16px;
+    padding: 20px;
+    background-color: transparent;
+    orientation: horizontal;
+    children: [ "power-column", "main-column", "controls-column" ];
+}
+
+/* Left: Power Options */
+power-column {
+    enabled: true;
+    width: 200px;
+    spacing: 12px;
+    padding: 20px;
+    background-color: rgba(31, 29, 46, 0.4);
+    border: 2px solid rgba(196, 167, 231, 0.25);
+    border-radius: 24px;
+}
+
+/* Center: Main Apps */
+main-column {
+    enabled: true;
+    spacing: 16px;
+    padding: 20px;
+    background-color: rgba(31, 29, 46, 0.35);
+    border: 2px solid rgba(156, 207, 216, 0.25);
+    border-radius: 24px;
+    children: [ "searchbar", "listview" ];
+}
+
+searchbar {
+    enabled: true;
+    spacing: 0;
+    padding: 12px 16px;
+    background-color: rgba(156, 207, 216, 0.2);
+    border: 1px solid rgba(156, 207, 216, 0.3);
+    border-radius: 16px;
+}
+
+/* Right: Controls */
+controls-column {
+    enabled: true;
+    width: 220px;
+    spacing: 16px;
+    padding: 20px;
+    background-color: rgba(31, 29, 46, 0.4);
+    border: 2px solid rgba(235, 111, 146, 0.25);
+    border-radius: 24px;
+}
+
+/* App grid */
+listview {
+    enabled: true;
+    columns: 3;
+    lines: 3;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 12px;
+    padding: 16px 0 0 0;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 8px;
+    padding: 16px;
+    border-radius: 18px;
+    background-color: rgba(31, 29, 46, 0.5);
+    text-color: rgba(224, 222, 244, 0.85);
+    cursor: pointer;
+    border: 2px solid rgba(196, 167, 231, 0.2);
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: rgba(31, 29, 46, 0.5);
+    text-color: rgba(224, 222, 244, 0.85);
+}
+
+element selected.normal {
+    background-image: linear-gradient(135deg, rgba(156, 207, 216, 0.35), rgba(235, 111, 146, 0.35));
+    text-color: #e0def4;
+    border: 2px solid rgba(156, 207, 216, 0.6);
+    box-shadow: 0 8px 24px rgba(156, 207, 216, 0.3);
+    transform: scale(1.05);
+}
+
+element-icon {
+    background-color: rgba(196, 167, 231, 0.15);
+    size: 42px;
+    cursor: pointer;
+    horizontal-align: 0.5;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    font: "JetBrainsMono Nerd Font 10";
+}
+
+/* Bottom dock bar */
+bottombar {
+    enabled: true;
+    spacing: 8px;
+    padding: 12px 24px;
+    background-color: rgba(31, 29, 46, 0.4);
+    border-top: 1px solid rgba(196, 167, 231, 0.2);
+    border-radius: 0 0 34px 34px;
+}
