@@ -8,9 +8,17 @@
 
 *Inspirado na estética cozy do hyprstellar*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
-[![Hyprland](https://img.shields.io/badge/Hyprland-Ready-blue.svg)](https://hyprland.org/)
-[![Arch Linux](https://img.shields.io/badge/Arch-Supported-cyan.svg)](https://archlinux.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-c4a7e7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
+[![Hyprland](https://img.shields.io/badge/Hyprland-Ready-9ccfd8?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
+[![Arch Linux](https://img.shields.io/badge/Arch-Supported-eb6f92?style=for-the-badge&logo=archlinux&logoColor=white)](https://archlinux.org/)
+[![Stars](https://img.shields.io/github/stars/alanascanferla/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/alanascanferla/stellar-dots/stargazers)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Glassmorphism-✨-e0def4?style=flat-square" alt="Glassmorphism">
+  <img src="https://img.shields.io/badge/Gaming_Ready-🎮-eb6f92?style=flat-square" alt="Gaming">
+  <img src="https://img.shields.io/badge/20+_Scripts-🛠️-9ccfd8?style=flat-square" alt="Scripts">
+  <img src="https://img.shields.io/badge/PT--BR-📝-c4a7e7?style=flat-square" alt="Portuguese">
+</p>
 
 [Instalação](#-instalação) • [Features](#-features) • [Temas](#-temas) • [Documentação](#-documentação) • [Screenshots](#-screenshots)
 
