@@ -18,12 +18,34 @@
 
 ---
 
+## 🚀 Destaques
+
+<div align="center">
+
+### ✨ Novo: Menu Glassmorphism
+Launchers modernos com efeito de vidro, gradientes rosa/roxo/vermelho e blur intenso.  
+Dois estilos disponíveis: **Sidebar compacto** e **Full menu** com busca.
+
+### 🎨 Tema Stellar
+Tema exclusivo com paleta cozy e design premium.
+
+### 🎮 Gaming Ready
+Detecção automática de GPU, drivers e ferramentas de gaming.
+
+### 📦 20+ Scripts Utilitários
+Power menu, clipboard, network, bluetooth, pomodoro, backups e muito mais!
+
+</div>
+
+---
+
+
 ## 🌟 Features
 
 ### Core
 - ⚡ **Instalação One-Command** - Um único comando para setup completo
-- 🎨 **7 Temas Lindos** - Rosé Pine, Catppuccin, Nord, Tokyo Night, Dracula, Gruvbox,- **Temas**: Rosé Pine, Catppuccin Mocha, Nord e **Stellar (Novo!)**
-- **Escolha de Barra**: Waybar (Simples) ou Illogical-Impulse (Avançado) com IA)
+- 🎨 **Temas Lindos** - Rosé Pine, Catppuccin Mocha, Nord e **Stellar (Novo!)**
+- 📊 **Escolha de Barra** - Waybar (Simples) ou Illogical-Impulse (Avançado com IA)
 - 🔒 **Backup Automático** - Seus configs antigos ficam seguros
 - 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
 - 🎯 **TUI Interativa** - Interface linda no terminal
@@ -112,11 +134,11 @@ O Stellar Dots inclui setup completo para gaming com:
 - **Hyprland** - Compositor Wayland com animações incríveis
 - **Waybar** - Barra superior customizada com módulos úteis
 - **Kitty** - Terminal rápido com blur e transparência
-- **Rofi** - Launcher de apps com design moderno
+- **Rofi** - Launcher de apps com design moderno + menus glassmorphism
 - **Hyprlock** - Lock screen com blur e efeitos
 - **Hypridle** - Gerenciamento de idle e suspend
 - **Starship** - Prompt bonito e informativo
-- **Scripts** - Wallpaper changer, screenshot, theme switcher, screen recorder
+- **Scripts** - 20+ scripts utilitários (wallpaper, screenshot, theme switcher, gaming, etc)
 
 ## 🚀 Instalação
 
@@ -181,6 +203,12 @@ cd stellar-dots
 ## 🖼️ Screenshots
 
 *Screenshots em breve!*
+
+### ✨ Destaques Visuais
+- Menu glassmorphism com efeito de vidro e gradientes
+- Animações suaves e transições modernas
+- Blur e transparência em todo o sistema
+- Temas cozy e aconchegantes
 
 ## 🛠️ Dependências
 
