@@ -8,16 +8,21 @@
     "margin-right": 12,
     "modules-left": [
         "hyprland/workspaces",
+        "custom/separator",
         "hyprland/window"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
+        "cpu",
+        "memory",
+        "custom/separator",
         "pulseaudio",
         "network",
         "bluetooth",
         "battery",
+        "custom/separator",
         "tray"
     ],
     "hyprland/workspaces": {
@@ -121,6 +126,23 @@
             "󰁹"
         ],
         "tooltip-format": "{timeTo}\n{power}W"
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 2,
+        "tooltip-format": "CPU: {usage}%\n{avg_frequency} GHz",
+        "on-click": "kitty -e btop"
+    },
+    "memory": {
+        "format": "  {percentage}%",
+        "interval": 2,
+        "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G\n{percentage}% usado",
+        "on-click": "kitty -e btop"
+    },
+    "custom/separator": {
+        "format": "│",
+        "interval": "once",
+        "tooltip": false
     },
     "tray": {
         "icon-size": 18,
