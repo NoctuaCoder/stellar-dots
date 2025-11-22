@@ -31,11 +31,11 @@
 
 <div align="center">
 
-### 💎 9 Glassmorphism Menu Styles
+### 💎 10 Glassmorphism Menu Styles
 The **largest collection** of glassmorphism menus for Hyprland!  
-Inspired by: YouTube, Spotify, iOS, macOS, and Smart Home UIs.
+Inspired by: YouTube, Spotify, iOS, macOS, Smart Home, and Widget Centers.
 
-**Styles:** Sidebar • Full • Ultimate • YouTube • Dock • Control • Cards • Dashboard • Spotify
+**Styles:** Sidebar • Full • Ultimate • YouTube • Dock • Control • Cards • Dashboard • Spotify • **Widgets (NEW!)**
 
 ### 🎨 8 Beautiful Themes
 Rosé Pine • Catppuccin • Nord • Stellar • Tokyo Night • Dracula • Gruvbox • Everforest
@@ -60,7 +60,7 @@ English, Portuguese, Spanish (coming soon), French (coming soon)
 
 ### Core
 - ⚡ **One-Command Installation** - Single command for complete setup
-- 💎 **9 Glassmorphism Menus** - Largest collection for Hyprland (Sidebar, Full, Ultimate, YouTube, Dock, Control, Cards, Dashboard, Spotify)
+- 💎 **10 Glassmorphism Menus** - Largest collection for Hyprland (Sidebar, Full, Ultimate, YouTube, Dock, Control, Cards, Dashboard, Spotify, Widgets)
 - 🎨 **8 Beautiful Themes** - Rosé Pine, Catppuccin, Nord, Stellar, Tokyo Night, Dracula, Gruvbox, Everforest
 - 📊 **Bar Choice** - Waybar (Simple) or Illogical-Impulse (Advanced with AI)
 - 🔒 **Automatic Backup** - Your old configs stay safe
@@ -93,11 +93,11 @@ English, Portuguese, Spanish (coming soon), French (coming soon)
 ### Visual
 - 🔄 **Theme Switcher** - Switch themes in real-time
 - 📸 **Utility Scripts** - Screenshot, wallpaper, screen recording
-- 💎 **Glassmorphism menus** - 9 different launcher styles
+- 💎 **Glassmorphism menus** - 10 different launcher styles
 
 ### 💎 Glassmorphism Menu Styles
 
-**9 unique styles inspired by modern UIs:**
+**10 unique styles inspired by modern UIs:**
 
 | Style | Type | Inspiration | Best For |
 |-------|------|-------------|----------|
@@ -110,6 +110,7 @@ English, Portuguese, Spanish (coming soon), French (coming soon)
 | **Cards** | Widgets | Smart Home | Room control |
 | **Dashboard** | Complex | Smart Home Pro | Full dashboard |
 | **Spotify** | Complex | Spotify | Music/Media |
+| **Widgets** | 3-Column | Widget Center | **Full control panel** ⭐ |
 
 **Launch:** `app-menu.sh [style]` or use keyboard shortcuts  
 **Docs:** [Glassmorphism Menu Guide](docs/GLASSMORPHISM_MENU.md)
