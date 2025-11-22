@@ -1,0 +1,123 @@
+/*******************************************************************************
+ *              GLASSMORPHISM CARDS - WIDGET GRID LAYOUT
+ *                    Card-based interface with room controls
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 750px;
+    height: 600px;
+    background-color: rgba(31, 29, 46, 0.35);
+    border: 2px solid rgba(196, 167, 231, 0.35);
+    border-radius: 32px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "sidebar-nav", "content-area" ];
+}
+
+/* Icon sidebar */
+sidebar-nav {
+    enabled: true;
+    width: 70px;
+    spacing: 16px;
+    padding: 24px 12px;
+    background-color: rgba(31, 29, 46, 0.4);
+    border-right: 1px solid rgba(196, 167, 231, 0.2);
+    border-radius: 30px 0 0 30px;
+}
+
+/* Main content */
+content-area {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "header", "listview" ];
+}
+
+/* Header with preview */
+header {
+    enabled: true;
+    spacing: 0;
+    padding: 24px;
+    background-color: rgba(31, 29, 46, 0.3);
+    border-bottom: 1px solid rgba(196, 167, 231, 0.2);
+}
+
+/* Card grid */
+listview {
+    enabled: true;
+    columns: 3;
+    lines: 2;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 16px;
+    padding: 24px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 10px;
+    padding: 18px;
+    border-radius: 20px;
+    background-color: rgba(31, 29, 46, 0.6);
+    text-color: rgba(224, 222, 244, 0.85);
+    cursor: pointer;
+    border: 2px solid rgba(196, 167, 231, 0.2);
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: rgba(31, 29, 46, 0.6);
+    text-color: rgba(224, 222, 244, 0.85);
+}
+
+element selected.normal {
+    background-image: linear-gradient(145deg, rgba(235, 111, 146, 0.25), rgba(196, 167, 231, 0.25));
+    text-color: #e0def4;
+    border: 2px solid rgba(235, 111, 146, 0.5);
+    box-shadow: 0 12px 32px rgba(235, 111, 146, 0.25);
+    transform: translateY(-4px);
+}
+
+element-icon {
+    background-color: rgba(196, 167, 231, 0.15);
+    size: 56px;
+    cursor: pointer;
+    horizontal-align: 0.5;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}
+
+/* Subtle animations */
+element {
+    transition: all 0.3s ease;
+}

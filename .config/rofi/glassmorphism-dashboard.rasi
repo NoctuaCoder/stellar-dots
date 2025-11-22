@@ -1,0 +1,154 @@
+/*******************************************************************************
+ *              GLASSMORPHISM DASHBOARD - SMART HOME STYLE
+ *                    Complex multi-widget dashboard layout
+ ******************************************************************************/
+
+* {
+    background-color: transparent;
+    text-color: #e0def4;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 900px;
+    height: 650px;
+    background-color: rgba(31, 29, 46, 0.4);
+    border: 2px solid rgba(196, 167, 231, 0.3);
+    border-radius: 28px;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    children: [ "topbar", "content" ];
+}
+
+/* Top navigation bar */
+topbar {
+    enabled: true;
+    spacing: 12px;
+    padding: 16px 24px;
+    background-color: rgba(31, 29, 46, 0.5);
+    border-bottom: 1px solid rgba(196, 167, 231, 0.2);
+    border-radius: 26px 26px 0 0;
+    orientation: horizontal;
+    children: [ "logo", "nav-buttons", "controls" ];
+}
+
+logo {
+    enabled: true;
+    background-color: transparent;
+    text-color: #c4a7e7;
+    str: " Stellar";
+    font: "JetBrainsMono Nerd Font Bold 14";
+}
+
+nav-buttons {
+    enabled: true;
+    spacing: 8px;
+    background-color: transparent;
+    orientation: horizontal;
+}
+
+controls {
+    enabled: true;
+    spacing: 8px;
+    background-color: transparent;
+    orientation: horizontal;
+    horizontal-align: 1.0;
+}
+
+/* Main content area */
+content {
+    enabled: true;
+    spacing: 0;
+    padding: 0;
+    background-color: transparent;
+    orientation: horizontal;
+    children: [ "sidebar-widgets", "listview" ];
+}
+
+/* Sidebar with widgets */
+sidebar-widgets {
+    enabled: true;
+    width: 180px;
+    spacing: 16px;
+    padding: 20px 16px;
+    background-color: rgba(31, 29, 46, 0.3);
+    border-right: 1px solid rgba(196, 167, 231, 0.2);
+}
+
+/* App grid */
+listview {
+    enabled: true;
+    columns: 3;
+    lines: 3;
+    cycle: true;
+    dynamic: true;
+    scrollbar: true;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 16px;
+    padding: 24px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 12px;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: rgba(31, 29, 46, 0.5);
+    text-color: rgba(224, 222, 244, 0.8);
+    cursor: pointer;
+    border: 2px solid rgba(196, 167, 231, 0.15);
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: rgba(31, 29, 46, 0.5);
+    text-color: rgba(224, 222, 244, 0.8);
+}
+
+element selected.normal {
+    background-image: linear-gradient(135deg, rgba(196, 167, 231, 0.3), rgba(156, 207, 216, 0.3));
+    text-color: #e0def4;
+    border: 2px solid rgba(196, 167, 231, 0.5);
+    box-shadow: 0 8px 24px rgba(196, 167, 231, 0.2);
+}
+
+element-icon {
+    background-color: transparent;
+    size: 48px;
+    cursor: pointer;
+    horizontal-align: 0.5;
+    border-radius: 12px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    font: "JetBrainsMono Nerd Font 10";
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width: 4px;
+    handle-color: rgba(196, 167, 231, 0.5);
+    background-color: rgba(31, 29, 46, 0.3);
+    border-radius: 8px;
+    padding: 0;
+    margin: 0 4px 0 0;
+}

@@ -2,7 +2,7 @@
 
 # ═══════════════════════════════════════════════════════════════════════════
 #                    GLASSMORPHISM APP MENU LAUNCHER
-#                         7 Different Styles Available
+#                         9 Different Styles Available!
 # ═══════════════════════════════════════════════════════════════════════════
 
 # Configuration
@@ -14,29 +14,42 @@ STYLE="${1:-sidebar}"
 # Show help
 show_help() {
     cat << EOF
-✨ Glassmorphism App Menu Launcher
+✨ Glassmorphism App Menu Launcher - 9 Styles!
 
 Usage: $(basename "$0") [STYLE]
 
-Available styles:
+📱 Vertical Layouts:
   sidebar   - Compact vertical sidebar (default)
-  full      - Full menu with search bar
   ultimate  - Icon-only vertical sidebar (YouTube style)
-  youtube   - Full YouTube-style menu with controls
-  dock      - Horizontal bottom dock (macOS style)
-  control   - Control center with widgets (iOS style)
-  spotify   - Music player layout (Spotify style)
+
+🔍 Full Screen:
+  full      - Full menu with search bar
+  youtube   - YouTube-style menu with window controls
+
+🚀 Horizontal:
+  dock      - Bottom horizontal dock (macOS style)
+
+🎛️ Widget Styles:
+  control   - iOS/Android control center
+  cards     - Card-based widget grid
+  dashboard - Smart home dashboard layout
+
+🎵 Complex Layouts:
+  spotify   - Music player with sidebar + grid
 
 Examples:
-  $(basename "$0") sidebar   # Vertical sidebar
-  $(basename "$0") dock      # Horizontal dock
-  $(basename "$0") spotify   # Spotify-style layout
-  $(basename "$0") --help    # Show this help
+  $(basename "$0") sidebar    # Vertical sidebar
+  $(basename "$0") dock       # Horizontal dock
+  $(basename "$0") cards      # Widget cards
+  $(basename "$0") dashboard  # Full dashboard
+  $(basename "$0") --help     # Show this help
 
-Keyboard shortcuts (in Hyprland):
-  Super + Space  - Full menu
-  Super + A      - Sidebar menu
-  Super + D      - Dock menu (add to hyprland.conf)
+Keyboard shortcuts (add to hyprland.conf):
+  Super + Space     - Full menu
+  Super + A         - Sidebar
+  Super + D         - Dock
+  Super + Shift + C - Cards
+  Super + Shift + D - Dashboard
 
 EOF
 }
@@ -67,6 +80,12 @@ case "$STYLE" in
         ;;
     spotify)
         rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-spotify.rasi"
+        ;;
+    dashboard)
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-dashboard.rasi"
+        ;;
+    cards)
+        rofi -show drun -theme "$ROFI_CONFIG_DIR/glassmorphism-cards.rasi"
         ;;
     *)
         echo "❌ Error: Unknown style '$STYLE'"
