@@ -347,17 +347,36 @@ If something doesn't work:
 
 ## 🖼️ Screenshots
 
-### 🌹 Rosé Pine Desktop
+````carousel
 ![Rosé Pine Desktop](.github/screenshots/desktop/rose-pine.png)
-
-### 💎 Glassmorphism Menu
+*Clean desktop with Rosé Pine theme - Cozy and elegant aesthetic*
+<!-- slide -->
 ![Glassmorphism Menu](.github/screenshots/features/glassmorphism-full.png)
+*Full glassmorphism menu with blur effect and pink/purple gradients*
+<!-- slide -->
+![Catppuccin Theme](.github/screenshots/themes/catppuccin.png)
+*Catppuccin Mocha - Modern pastel palette*
+<!-- slide -->
+![Nord Theme](.github/screenshots/themes/nord.png)
+*Nord - Minimalist arctic theme with icy blues*
+<!-- slide -->
+![Stellar Theme](.github/screenshots/themes/stellar.png)
+*Stellar - Premium theme with cosmic gradients*
+<!-- slide -->
+![Tokyo Night Theme](.github/screenshots/themes/tokyo-night.png)
+*Tokyo Night - Cyberpunk aesthetic with vibrant neon colors*
+````
 
 ### ✨ Visual Highlights
-- Glassmorphism menu with glass effect and gradients
-- Smooth animations and modern transitions
-- Blur and transparency throughout the system
-- Cozy and comfortable themes
+- 💎 Glassmorphism menu with glass effect and gradients
+- 🌊 Smooth animations and modern transitions
+- 💫 Blur and transparency throughout the system
+- 🎨 8 beautiful themes to choose from
+- ⭐ Star-shaped workspace indicators
+- 🖥️ CPU and Memory monitoring in Waybar
+- 🎯 Hover effects with elevation and glow
+
+> 📸 More screenshots available in [`.github/screenshots/`](.github/screenshots/)
 
 ## 🛠️ Dependencies
 
