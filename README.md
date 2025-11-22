@@ -31,18 +31,26 @@
 
 <div align="center">
 
-### ✨ New: Glassmorphism Menus
-Modern launchers with glass effect, pink/purple/red gradients and intense blur.  
-Two styles available: **Compact sidebar** and **Full menu** with search.
+### 💎 9 Glassmorphism Menu Styles
+The **largest collection** of glassmorphism menus for Hyprland!  
+Inspired by: YouTube, Spotify, iOS, macOS, and Smart Home UIs.
 
-### 🎨 Stellar Theme
-Exclusive theme with cozy palette and premium design.
+**Styles:** Sidebar • Full • Ultimate • YouTube • Dock • Control • Cards • Dashboard • Spotify
+
+### 🎨 8 Beautiful Themes
+Rosé Pine • Catppuccin • Nord • Stellar • Tokyo Night • Dracula • Gruvbox • Everforest
 
 ### 🎮 Gaming Ready
-Automatic GPU detection, drivers and gaming tools.
+Automatic GPU detection (NVIDIA/AMD/Intel), drivers, and gaming tools pre-configured.
 
-### 📦 20+ Utility Scripts
-Power menu, clipboard, network, bluetooth, pomodoro, backups and much more!
+### 🛡️ Security First
+Verification script, security documentation, automatic backups, and transparent installation.
+
+### 📦 30+ Utility Scripts
+Power menu, clipboard, network, bluetooth, pomodoro, backups, theme switcher, and much more!
+
+### 🌍 International
+English, Portuguese, Spanish (coming soon), French (coming soon)
 
 </div>
 
@@ -52,12 +60,14 @@ Power menu, clipboard, network, bluetooth, pomodoro, backups and much more!
 
 ### Core
 - ⚡ **One-Command Installation** - Single command for complete setup
-- 🎨 **Beautiful Themes** - Rosé Pine, Catppuccin Mocha, Nord and **Stellar (New!)**
+- 💎 **9 Glassmorphism Menus** - Largest collection for Hyprland (Sidebar, Full, Ultimate, YouTube, Dock, Control, Cards, Dashboard, Spotify)
+- 🎨 **8 Beautiful Themes** - Rosé Pine, Catppuccin, Nord, Stellar, Tokyo Night, Dracula, Gruvbox, Everforest
 - 📊 **Bar Choice** - Waybar (Simple) or Illogical-Impulse (Advanced with AI)
 - 🔒 **Automatic Backup** - Your old configs stay safe
 - 🚀 **Multi-Distro** - Support for Arch, Fedora, Debian/Ubuntu
 - 🎯 **Interactive TUI** - Beautiful terminal interface
 - 📝 **Complete Documentation** - Everything documented!
+- 🛡️ **Security First** - Verification script + security docs
 
 ### Utilities
 - 🔌 **Power Menu** - Shutdown, restart, lock, suspend
@@ -83,6 +93,26 @@ Power menu, clipboard, network, bluetooth, pomodoro, backups and much more!
 ### Visual
 - 🔄 **Theme Switcher** - Switch themes in real-time
 - 📸 **Utility Scripts** - Screenshot, wallpaper, screen recording
+- 💎 **Glassmorphism menus** - 9 different launcher styles
+
+### 💎 Glassmorphism Menu Styles
+
+**9 unique styles inspired by modern UIs:**
+
+| Style | Type | Inspiration | Best For |
+|-------|------|-------------|----------|
+| **Sidebar** | Vertical | Classic | Daily use |
+| **Full** | Center | Rofi Enhanced | Search |
+| **Ultimate** | Vertical | YouTube | Minimalism |
+| **YouTube** | Center | YouTube UI | Premium look |
+| **Dock** | Horizontal | macOS | Quick access |
+| **Control** | Widgets | iOS/Android | Control center |
+| **Cards** | Widgets | Smart Home | Room control |
+| **Dashboard** | Complex | Smart Home Pro | Full dashboard |
+| **Spotify** | Complex | Spotify | Music/Media |
+
+**Launch:** `app-menu.sh [style]` or use keyboard shortcuts  
+**Docs:** [Glassmorphism Menu Guide](docs/GLASSMORPHISM_MENU.md)
 - 🌊 **Smooth Animations** - Modern transitions and effects
 - 💎 **Glassmorphism** - Blur and transparency everywhere
 - ✨ **Glassmorphism Menus** - Modern launchers with glass effect (sidebar + full menu)
