@@ -12,11 +12,16 @@
 [![Hyprland](https://img.shields.io/badge/Hyprland-Ready-9ccfd8?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
 [![Arch Linux](https://img.shields.io/badge/Arch-Supported-eb6f92?style=for-the-badge&logo=archlinux&logoColor=white)](https://archlinux.org/)
 [![Stars](https://img.shields.io/github/stars/NoctuaCoder/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/stargazers)
+[![Forks](https://img.shields.io/github/forks/NoctuaCoder/stellar-dots?style=for-the-badge&logo=github&color=9ccfd8&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/network/members)
+[![Issues](https://img.shields.io/github/issues/NoctuaCoder/stellar-dots?style=for-the-badge&logo=github&color=eb6f92&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-c4a7e7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/pulls)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Glassmorphism-✨-e0def4?style=flat-square" alt="Glassmorphism">
   <img src="https://img.shields.io/badge/Gaming_Ready-🎮-eb6f92?style=flat-square" alt="Gaming">
-  <img src="https://img.shields.io/badge/20+_Scripts-🛠️-9ccfd8?style=flat-square" alt="Scripts">
+  <img src="https://img.shields.io/badge/30+_Scripts-🛠️-9ccfd8?style=flat-square" alt="Scripts">
+  <img src="https://img.shields.io/badge/8_Themes-🎨-f6c177?style=flat-square" alt="Themes">
+  <img src="https://img.shields.io/badge/10_Menus-💎-c4a7e7?style=flat-square" alt="Menus">
 </p>
 
 **Languages:** [🇺🇸 English](#) • [🇧🇷 Português](README.pt-BR.md) • [🇪🇸 Español](#) • [🇫🇷 Français](#)
